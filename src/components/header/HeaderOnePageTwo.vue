@@ -7,12 +7,12 @@
       width="320"
     >
       <v-list-item class="pa-5">
-        <div class="logo">
+        <!-- <div class="logo">
           <img
             src="../../assets/images/logo/logo-symbol-dark.png"
             alt="Creative Agency Logo"
           />
-        </div>
+        </div> -->
         <v-spacer></v-spacer>
         <v-btn
           class="close-icon"
@@ -54,12 +54,12 @@
       elevate-on-scroll
       class="header-one-page-nav header-one-page-nav-two"
     >
-      <router-link to="/" class="logo">
+      <!-- <router-link to="/" class="logo">
         <img src="../../assets/images/logo/logo-symbol-dark.png" />
-      </router-link>
+      </router-link> -->
       <!-- End brand logo -->
 
-      <v-toolbar-items class="hidden-xs-only hidden-sm-only height-auto ml--35">
+      <v-toolbar-items class="hidden-xs-only hidden-sm-only height-auto">
         <scrollactive
           active-class="v-btn--active"
           bezier-easing-value=".5,0,.35,1"
@@ -82,12 +82,12 @@
       <div class="social-share-inner">
         <socialTwo />
       </div>
-      <a
+      <!-- <a
         class="rn-btn"
         href="https://themeforest.net/checkout/from_item/30195230?license=regular"
       >
         <span>buy now</span>
-      </a>
+      </a> -->
       <v-btn
         icon
         class="ma-0 pa-0 hidden-md-and-up"
@@ -113,10 +113,10 @@ export default {
     items: [
       { title: "Home", to: "#home" },
       { title: "About", to: "#about" },
-      { title: "Service", to: "#service" },
+      // { title: "Service", to: "#service" },
       { title: "Portfolio", to: "#portfolio" },
-      { title: "Blog", to: "#blog" },
-      { title: "Contact", to: "#contact" },
+      // { title: "Blog", to: "#blog" },
+      // { title: "Contact", to: "#contact" },
     ],
     icon: "menu",
     closeIcon: "x",

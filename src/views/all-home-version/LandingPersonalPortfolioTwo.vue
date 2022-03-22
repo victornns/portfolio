@@ -36,7 +36,7 @@
     <!-- Start About Area  -->
 
     <!-- Start Service Area  -->
-    <div
+    <!-- <div
       class="section service-area rn-service-area rn-section-gap bg_color--5"
       id="service"
     >
@@ -56,12 +56,12 @@
         </v-row>
         <ServiceThree />
       </div>
-    </div>
+    </div> -->
     <!-- Start Service Area  -->
 
     <!-- Start Portfolio Area -->
     <div
-      class="section rn-portfolio-area rn-section-gap bg_color--1"
+      class="section rn-portfolio-area rn-section-gap bg_color--5"
       id="portfolio"
     >
       <v-container>
@@ -89,7 +89,7 @@
     <!-- End Portfolio Area -->
 
     <!-- Start Blog Area  -->
-    <div class="section rn-blog-area rn-section-gap bg_color--5" id="blog">
+    <!-- <div class="section rn-blog-area rn-section-gap bg_color--5" id="blog">
       <v-container>
         <v-row align="end" class="mb--20">
           <v-col lg="6" md="12">
@@ -104,11 +104,11 @@
         </v-row>
         <Blog />
       </v-container>
-    </div>
+    </div> -->
     <!-- End Blog Area  -->
 
     <!-- Start Contact Area  -->
-    <div
+    <!-- <div
       class="section rn-contact-area rn-section-gap bg_color--1"
       id="contact"
     >
@@ -124,11 +124,11 @@
           </Contact>
         </v-container>
       </div>
-    </div>
+    </div> -->
     <!-- End Contact Area  -->
 
     <!-- Start Footer Area  -->
-    <Footer />
+    <!-- <Footer /> -->
     <!-- End Footer Area  -->
   </div>
 </template>
@@ -137,22 +137,22 @@
   import HeaderOnePageTwo from "../../components/header/HeaderOnePageTwo";
   import BannerThree from "../../components/slider/BannerThree";
   import AboutFour from "../../components/about/AboutFour";
-  import ServiceThree from "../../components/service/ServiceThree";
+  // import ServiceThree from "../../components/service/ServiceThree";
   import PortfolioFour from "../../components/portfolio/PortfolioFour";
-  import Blog from "../../components/blog/Blog";
-  import Contact from "../../components/contact/Contact";
-  import Footer from "../../components/footer/FooterTwo";
+  // import Blog from "../../components/blog/Blog";
+  // import Contact from "../../components/contact/Contact";
+  // import Footer from "../../components/footer/FooterTwo";
 
   export default {
     components: {
       HeaderOnePageTwo,
       BannerThree,
       AboutFour,
-      ServiceThree,
+      // ServiceThree,
       PortfolioFour,
-      Blog,
-      Contact,
-      Footer,
+      // Blog,
+      // Contact,
+      // Footer,
     },
     data() {
       return {};
