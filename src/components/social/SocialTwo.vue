@@ -14,22 +14,34 @@
     data() {
       return {
         socialList: [
+          // {
+          //   icon: "fa-facebook-f",
+          //   url: "https://www.facebook.com/",
+          // },
           {
-            icon: "fa-facebook-f",
-            url: "https://www.facebook.com/",
+            icon: "fa-github",
+            url: "https://github.com/victornns",
           },
           {
             icon: "fa-linkedin-in",
-            url: "https://www.linkedin.com/",
+            url: "https://www.linkedin.com/in/victornns/",
           },
           {
-            icon: "fa-twitter",
-            url: "https://twitter.com/",
+            icon: "fa-google",
+            url: "mailto:victor.nascimento.ns@gmail.com",
           },
           {
-            icon: "fa-instagram",
-            url: "https://instagram.com/",
+            icon: "fa-whatsapp",
+            url: "https://api.whatsapp.com/send?phone=+5511967395380",
           },
+          // {
+          //   icon: "fa-twitter",
+          //   url: "https://twitter.com/",
+          // },
+          // {
+          //   icon: "fa-instagram",
+          //   url: "https://instagram.com/",
+          // },
         ],
       };
     },

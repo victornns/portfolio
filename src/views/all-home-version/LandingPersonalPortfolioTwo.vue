@@ -6,28 +6,36 @@
     <!-- Start Slider Area  -->
     <div class="rn-slider-area poss_relative" id="home">
       <div
-        class="slide personal-portfolio-slider slider-style-3 slider-paralax bg_image bg_image--25 d-flex align-center"
+        class="slide personal-portfolio-slider slider-style-3 slider-paralax bg_image d-flex align-center"
+        :style="{'background-image': 'url(' + require('@/assets/images/wallpaper-universe.jpg') + ')'}"
       >
         <BannerThree>
-          <span slot="designation">FREELANCE DIGITAL DESIGNER</span>
+          <span slot="designation">WEB DEVELOPER</span>
           <h1 class="heading-title" slot="heading-title">
-            Hello, I’m <span>Smith</span> Welcome to my World.
+            Olá, Sou Victor<br>
+            <span>JS Developer.</span><br>
+            <!--  -->
           </h1>
+          <h3 slot="heading-title">Músico por hobby e admirador do universo</h3>
+          <!-- <h1 class="heading-title" slot="heading-title">
+            Me chamo <span>Victor</span>, <br>veja a parte de um todo.
+          </h1> -->
         </BannerThree>
       </div>
     </div>
     <!-- End Slider Area -->
 
     <!-- Start About Area  -->
-    <div class="section about-area rn-section-gap bg_color--1" id="about">
+    <div class="section about-area rn-section-gap bg_color--1" id="sobre">
       <div class="about-wrapper">
         <div class="container">
           <AboutFour>
             <img
               slot="thum-img"
               class="w-100"
-              src="../../assets/images/about/about-8.jpg"
+              src="../../assets/images/me.jpg"
               alt="About Images"
+              style="filter: opacity(0.85);"
             />
           </AboutFour>
         </div>
@@ -156,6 +164,11 @@
     },
     data() {
       return {};
+    },
+    computed: {
+      imageUrl: function() {
+        return 'url(public/favicon.ico)';
+      }
     },
   };
 </script>

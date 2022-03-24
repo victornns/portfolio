@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import goTo from "vuetify/es5/services/goto";
 import Missing from "../views/404.vue";
 import Home from "../views/all-home-version/LandingPersonalPortfolioTwo.vue";
+// import Demo from "../views/Demo.vue";
 
 Vue.use(VueRouter);
 
@@ -11,18 +12,18 @@ const routes = [
     path: "/",
     component: Home,
     meta: {
-      title: "Trydo || Creative Agency And Multipurpose Template",
+      title: "Portfólio",
     },
   },
 
-  // {
-  //   path: "/about",
-  //   name: "About",
-  //   meta: {
-  //     title: "About",
-  //   },
-  //   component: () => import("../views/About.vue"),
-  // },
+  {
+    path: "/about",
+    name: "About",
+    meta: {
+      title: "About",
+    },
+    component: () => import("../views/About.vue"),
+  },
   // {
   //   path: "/main-demo",
   //   name: "MainDemo",
@@ -223,7 +224,7 @@ const routes = [
     path: "/portfolio-details",
     name: "PortfolioDetails",
     meta: {
-      title: "Portfolio Details || VueJS Multipurpose Template",
+      title: "Portfólio - Detalhes",
     },
     component: () => import("../views/portfolio/PortfolioDetails.vue"),
   },
@@ -343,7 +344,7 @@ const routes = [
     path: "*",
     component: Missing,
     meta: {
-      title: "404 || VueJS Multipurpose Template",
+      title: "404",
     },
   },
 ];

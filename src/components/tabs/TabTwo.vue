@@ -41,19 +41,15 @@
         items: [
           {
             id: 1,
-            name: "Main skills",
+            name: "Skills",
           },
           {
             id: 2,
-            name: "Award",
+            name: "Experiências",
           },
           {
             id: 3,
-            name: "Experience",
-          },
-          {
-            id: 4,
-            name: "Education & Certification",
+            name: "Educação",
           },
         ],
 
@@ -62,19 +58,28 @@
             id: 1,
             content: [
               {
-                title: "User experience design",
-                name: "UI/UX",
-                desc: "Delight the user and make it work.",
+                title: "User Interface Development",
+                name: "✓",
               },
               {
-                title: "Web and user interface design",
-                name: "Development",
-                desc: "Websites, web experiences, ...",
+                title: "Reactive Programming",
+                name: "✓",
               },
               {
-                title: "Interaction design",
-                name: "Animation",
-                desc: "I like to move it move it.",
+                title: "CMS Development",
+                name: "✓",
+              },
+              {
+                title: "Web Performance Optimization",
+                name: "✓",
+              },
+              {
+                title: "Cross-browser/Device Testing",
+                name: "✓",
+              },
+              {
+                title: "Web Accessibility",
+                name: "✓",
               },
             ],
           },
@@ -82,19 +87,24 @@
             id: 2,
             content: [
               {
-                title: "Awwwards.com",
-                name: "Winner",
-                desc: " 2019 - 2020",
+                title: "Front-end Developer",
+                name: "One Digital (Growth Agency)",
+                desc: "2019 - Atual",
               },
               {
-                title: "CSS Design Awards",
-                name: "Winner",
-                desc: "2017 - 2018",
+                title: "Front-end Developer",
+                name: "Cave Digital (Agência de Estratégia e Comunicação Digital)",
+                desc: "2018 - 2019",
               },
               {
-                title: "Design nominees",
-                name: "site of the day",
-                desc: "2013 - 2014",
+                title: "Front-end Developer",
+                name: "Agência Profite (Implantação de E-Commerce, SEO e Evolução)",
+                desc: "2018 - 2018",
+              },
+              {
+                title: "Front-end Developer",
+                name: "L4U (Aceleradora de Marketing e Negócios Digitais)",
+                desc: "2016 - 2017",
               },
             ],
           },
@@ -102,39 +112,14 @@
             id: 3,
             content: [
               {
-                title: "Sr. Front-end Engineer",
-                name: "Google",
-                desc: "2018 - Current",
+                title: "Análise e Desenvolvimento de Sistemas",
+                name: "Faculdade Impacta de Tecnologia",
+                desc: "2019 - 2020",
               },
               {
-                title: "Front-end Engineer",
-                name: "Microsoft",
-                desc: "2017 - 2018",
-              },
-              {
-                title: "Software Engineer",
-                name: "Alibaba",
-                desc: "2013- 2014",
-              },
-            ],
-          },
-          {
-            id: 4,
-            content: [
-              {
-                title: "BSc In CSE",
-                name: "ABC Institute, Los Angeles, CA",
-                desc: "2009",
-              },
-              {
-                title: "Diploma in Computer Science",
-                name: "Gamma Technical Institute",
-                desc: "2009",
-              },
-              {
-                title: "Graphic Designer",
-                name: "ABC Institute, Los Angeles, CA",
-                desc: "2007",
+                title: "Ciência da Computação",
+                name: "Universidade São Judas Tadeu",
+                desc: "2015 - 2018 (Bacharelado trancado em 2017)",
               },
             ],
           },

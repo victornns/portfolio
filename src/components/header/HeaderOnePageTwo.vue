@@ -112,9 +112,9 @@ export default {
     drawer: false,
     items: [
       { title: "Home", to: "#home" },
-      { title: "About", to: "#about" },
+      { title: "Sobre", to: "#sobre" },
       // { title: "Service", to: "#service" },
-      { title: "Portfolio", to: "#portfolio" },
+      { title: "Portfólio", to: "#portfolio" },
       // { title: "Blog", to: "#blog" },
       // { title: "Contact", to: "#contact" },
     ],

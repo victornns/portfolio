@@ -6,16 +6,10 @@
       </div>
     </v-col>
     <v-col lg="7" md="7" cols="12">
-      <div class="about-inner inner pt--100 pt_sm--40 pt_md--40">
+      <div class="about-inner inner pt--40 pt_sm--40 pt_md--40">
         <div class="section-title">
-          <h2 class="heading-title">About Me</h2>
-          <p class="description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered
-            <a href="#">alteration</a> in some form, by injected humour, or
-            randomised words which dont look even slightly believable. If you
-            are going to use a passage of Lorem Ipsum,
-          </p>
+          <h2 class="heading-title">Sobre Mim</h2>
+          <p class="description">Formado em Análise e Desenvolvimento de Sistemas e motivado por novos conhecimentos. Trabalho com desenvolvimento web há alguns anos e constantemente envolvo-me em novos projetos. Meu sonho de adolescente era ser astrônomo ou hippie, ambos não aconteceram. Especializado em desenvolvimento front-end e músico nas horas livres. Sou de SP, trabalho remoto e sempre que possível estou viajando.</p>
         </div>
         <!-- End .section-title -->
         <div class="tab-wrapper mt--30">
