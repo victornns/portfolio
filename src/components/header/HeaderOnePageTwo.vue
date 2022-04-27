@@ -111,12 +111,9 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "Home", to: "#home" },
-      { title: "Sobre", to: "#sobre" },
-      // { title: "Service", to: "#service" },
-      { title: "Portfólio", to: "#portfolio" },
-      // { title: "Blog", to: "#blog" },
-      // { title: "Contact", to: "#contact" },
+      { title: "Home", to: "/#home" },
+      { title: "Sobre", to: "/#sobre" },
+      { title: "Portfólio", to: "/#portfolio" },
     ],
     icon: "menu",
     closeIcon: "x",

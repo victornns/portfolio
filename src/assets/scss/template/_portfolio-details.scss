@@ -8,6 +8,16 @@
         position: relative;
         .video-popup {
         }
+
+        &.gradient:after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: linear-gradient(0deg, white, transparent);
+        }
     }
 }
 

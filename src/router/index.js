@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import goTo from "vuetify/es5/services/goto";
 import Missing from "../views/404.vue";
 import Home from "../views/all-home-version/LandingPersonalPortfolioTwo.vue";
-// import Demo from "../views/Demo.vue";
+import Demo from "../views/Demo.vue";
 
 Vue.use(VueRouter);
 
@@ -13,6 +13,13 @@ const routes = [
     component: Home,
     meta: {
       title: "Portfólio",
+    },
+  },
+  {
+    path: "/demo",
+    component: Demo,
+    meta: {
+      title: "Demo",
     },
   },
 

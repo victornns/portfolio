@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Start Header Area -->
-    <Header>
+    <HeaderOnePageTwo>
       <img slot="logo" src="../../assets/images/logo/logo.png" />
-    </Header>
+    </HeaderOnePageTwo>
     <!-- End Header Area -->
 
     <!-- Start Breadcrump Area  -->
@@ -35,7 +35,7 @@
         <v-row>
           <v-col>
             <div class="portfolio-details">
-              <div class="inner">
+              <div class="inner mb--50">
                 <h2>Trydo</h2>
                 <p class="subtitle">
                   There are many variations of passages of Lorem Ipsum
@@ -63,22 +63,9 @@
                     <h4>View Project</h4>
                   </div>
                 </div>
-                <div class="portfolio-share-link mt--20 pb--70 pb_sm--40">
-                  <ul
-                    class="social-share rn-lg-size d-flex justify-start liststyle mt--15"
-                  >
-                    <li v-for="(social, i) in socialList" :key="i">
-                      <a
-                        target="_blank"
-                        :href="social.url"
-                        v-html="iconSvg(social.icon)"
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
               </div>
               <div class="portfolio-thumb-inner">
-                <div class="thumb position-relative mb--30">
+                <!-- <div class="thumb position-relative mb--30">
                   <CoolLightBox
                     :items="items"
                     :index="index"
@@ -100,18 +87,15 @@
                       ></a>
                     </div>
                   </div>
-                </div>
-                <div class="thumb mb--30">
-                  <img
-                    src="../../assets/images/portfolio/portfolio-big-02.jpg"
-                    alt="Portfolio Images"
-                  />
-                </div>
-                <div class="thumb">
-                  <img
-                    src="../../assets/images/portfolio/portfolio-big-01.jpg"
-                    alt="Portfolio Images"
-                  />
+                </div> -->
+                <div 
+                  class="thumb gradient mb--50"
+                  v-for="(image, imageIndex) in images" 
+                  :key="imageIndex">
+                    <img
+                      :src="image.thumb"
+                      alt="Imagem Ilustrativa"
+                    />
                 </div>
               </div>
             </div>
@@ -163,19 +147,15 @@
     </div>
     <!-- End Related Work  -->
 
-    <Footer />
   </div>
 </template>
 
 <script>
-  import Header from "../../components/header/Header";
-  import Footer from "../../components/footer/Footer";
-  import feather from "feather-icons";
+  import HeaderOnePageTwo from "../../components/header/HeaderOnePageTwo";
 
   export default {
     components: {
-      Header,
-      Footer,
+      HeaderOnePageTwo,
     },
     data() {
       return {
@@ -185,22 +165,9 @@
             src: "https://www.youtube.com/watch?v=ZOoVOfieAF8",
           },
         ],
-        socialList: [
+        images: [
           {
-            url: "https://www.facebook.com/",
-            icon: "facebook",
-          },
-          {
-            url: "https://www.linkedin.com/",
-            icon: "linkedin",
-          },
-          {
-            url: "https://instagram.com/",
-            icon: "instagram",
-          },
-          {
-            url: "https://twitter.com/",
-            icon: "twitter",
+            thumb: require("../../assets/images/screenshots/constelacao-dvl/about-page-desktop-1230px.jpg")
           },
         ],
         moreProjects: [
@@ -217,11 +184,6 @@
         ],
         index: null,
       };
-    },
-    methods: {
-      iconSvg(icon) {
-        return feather.icons[icon].toSvg();
-      },
-    },
+    }
   };
 </script>
