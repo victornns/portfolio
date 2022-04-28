@@ -94,47 +94,11 @@
         background-position: center;
         border-radius: 5px;
         background-color: #0a0a0a;
-        background-image: url(../images/portfolio/portfolio-1.jpg);
+        // background-image: url(../images/portfolio/390x532.jpg);
         transform: scale(1.13) translateZ(0);
         backface-visibility: hidden;
         transition: transform .28s ease;
         z-index: 4;
-
-        &.image-1 {
-            background-image: url(../images/portfolio/portfolio-1.jpg);
-        }
-
-        &.image-2 {
-            background-image: url(../images/portfolio/portfolio-2.jpg);
-        }
-
-        &.image-3 {
-            background-image: url(../images/portfolio/portfolio-3.jpg);
-        }
-
-        &.image-4 {
-            background-image: url(../images/portfolio/portfolio-4.jpg);
-        }
-
-        &.image-5 {
-            background-image: url(../images/portfolio/portfolio-5.jpg);
-        }
-
-        &.image-6 {
-            background-image: url(../images/portfolio/portfolio-6.jpg);
-        }
-
-        &.image-7 {
-            background-image: url(../images/portfolio/portfolio-7.jpg);
-        }
-
-        &.image-8 {
-            background-image: url(../images/portfolio/portfolio-8.jpg);
-        }
-
-        &.image-9 {
-            background-image: url(../images/portfolio/portfolio-9.jpg);
-        }
 
         &::after {
             background-color: rgba(45, 45, 45, .35);
@@ -161,49 +125,11 @@
         background-size: cover;
         background-position: center;
         background-color: #0a0a0a;
-        background-image: url(../images/portfolio/portfolio-1.jpg);
+        // background-image: url(../images/portfolio/390x532.jpg);
         @extend %transition;
         transform: translateY(38px);
         opacity: 0;
         z-index: 1;
-
-        &.image-1 {
-            background-image: url(../images/portfolio/portfolio-1.jpg);
-        }
-
-        &.image-2 {
-            background-image: url(../images/portfolio/portfolio-2.jpg);
-        }
-
-        &.image-3 {
-            background-image: url(../images/portfolio/portfolio-3.jpg);
-        }
-
-        &.image-4 {
-            background-image: url(../images/portfolio/portfolio-4.jpg);
-        }
-
-        &.image-5 {
-            background-image: url(../images/portfolio/portfolio-5.jpg);
-        }
-
-        &.image-6 {
-            background-image: url(../images/portfolio/portfolio-6.jpg);
-        }
-
-        &.image-7 {
-            background-image: url(../images/portfolio/portfolio-7.jpg);
-        }
-
-        &.image-8 {
-            background-image: url(../images/portfolio/portfolio-8.jpg);
-        }
-
-        &.image-9 {
-            background-image: url(../images/portfolio/portfolio-9.jpg);
-        }
-
-
     }
 
     .content {
@@ -356,7 +282,7 @@
             background-position: center;
             border-radius: 5px;
             background-color: #0a0a0a;
-            background-image: url(../images/portfolio/portfolio-static-01.jpg);
+            // background-image: url(../images/portfolio/portfolio-static-01.jpg);
             transform: scale(1.13) translateZ(0);
             backface-visibility: hidden;
             transition: transform .28s ease;
@@ -364,37 +290,6 @@
 
             @media #{$large-mobile} {
                 transform: scale(1) translateZ(0);
-            }
-
-            &.image-1 {
-                background-image: url(../images/portfolio/portfolio-static-01.jpg);
-            }
-            &.image-2 {
-                background-image: url(../images/portfolio/portfolio-static-02.jpg);
-            }
-            &.image-3 {
-                background-image: url(../images/portfolio/portfolio-static-03.jpg);
-            }
-            &.image-4 {
-                background-image: url(../images/portfolio/portfolio-static-04.jpg);
-            }
-            &.image-5 {
-                background-image: url(../images/portfolio/portfolio-static-05.jpg);
-            }
-            &.image-6 {
-                background-image: url(../images/portfolio/portfolio-static-06.jpg);
-            }
-            &.image-7 {
-                background-image: url(../images/portfolio/portfolio-static-07.jpg);
-            }
-            &.image-8 {
-                background-image: url(../images/portfolio/portfolio-static-08.jpg);
-            }
-            &.image-9 {
-                background-image: url(../images/portfolio/portfolio-static-09.jpg);
-            }
-            &.image-10 {
-                background-image: url(../images/portfolio/portfolio-static-10.jpg);
             }
 
             &::after {
@@ -421,7 +316,7 @@
             background-size: cover;
             background-position: center;
             background-color: #0a0a0a;
-            background-image: url(../images/portfolio/portfolio-static-01.jpg);
+            // background-image: url(../images/portfolio/portfolio-static-01.jpg);
             @extend %transition;
             transform: translateY(38px);
             opacity: 0;
@@ -430,37 +325,6 @@
             @media #{$large-mobile} {
                 opacity: 0;
                 z-index: 9;
-            }
-
-            &.image-1 {
-                background-image: url(../images/portfolio/portfolio-static-01.jpg);
-            }
-            &.image-2 {
-                background-image: url(../images/portfolio/portfolio-static-02.jpg);
-            }
-            &.image-3 {
-                background-image: url(../images/portfolio/portfolio-static-03.jpg);
-            }
-            &.image-4 {
-                background-image: url(../images/portfolio/portfolio-static-04.jpg);
-            }
-            &.image-5 {
-                background-image: url(../images/portfolio/portfolio-static-05.jpg);
-            }
-            &.image-6 {
-                background-image: url(../images/portfolio/portfolio-static-06.jpg);
-            }
-            &.image-7 {
-                background-image: url(../images/portfolio/portfolio-static-07.jpg);
-            }
-            &.image-8 {
-                background-image: url(../images/portfolio/portfolio-static-08.jpg);
-            }
-            &.image-9 {
-                background-image: url(../images/portfolio/portfolio-static-09.jpg);
-            }
-            &.image-10 {
-                background-image: url(../images/portfolio/portfolio-static-10.jpg);
             }
         }
 

@@ -40,32 +40,42 @@
       return {
         portfolioContent: [
           {
-            src: require("../../assets/images/portfolio/portfolio-2.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },
           {
-            src: require("../../assets/images/portfolio/portfolio-5.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },
           {
-            src: require("../../assets/images/portfolio/portfolio-6.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },
           {
-            src: require("../../assets/images/portfolio/portfolio-7.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },
           {
-            src: require("../../assets/images/portfolio/portfolio-8.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },
           {
-            src: require("../../assets/images/portfolio/portfolio-9.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
+            meta: "Development",
+            title: "Getting tickets to the big show",
+          },
+          {
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
+            meta: "Development",
+            title: "Getting tickets to the big show",
+          },
+          {
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             meta: "Development",
             title: "Getting tickets to the big show",
           },

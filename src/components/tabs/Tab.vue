@@ -8,28 +8,32 @@
       </v-tabs>
 
       <v-tabs-items v-model="tab">
-        <v-tab-item v-for="item in tabContent" :key="item.id">
-          <div class="single-tab-content">
-            <p>
-              {{ item.desc }}
-            </p>
-            <div class="list0style-inner mt--30">
-              <h4>Lorem ipsum dolor sit.</h4>
-              <ul class="list-style--1">
-                <li class="d-flex" v-for="(list, i) in listOne" :key="i">
-                  <i v-html="iconSvg(list.icon)"></i>
-                  {{ list.desc }}
-                </li>
-              </ul>
-            </div>
-          </div>
+        <v-tab-item
+          transition="fade-transition"
+          v-for="item in tabContent"
+          :key="item.id"
+        >
+          <v-card flat>
+            <v-card-text>
+              <div class="single-tab-content">
+                <ul>
+                  <li v-for="(item, i) in item.content" :key="i">
+                    <router-link to="/service"
+                      >{{ item.title }}
+                      <span> - {{ item.name }}</span></router-link
+                    >
+                    {{ item.desc }}
+                  </li>
+                </ul>
+              </div>
+            </v-card-text>
+          </v-card>
         </v-tab-item>
       </v-tabs-items>
     </div>
   </v-col>
 </template>
 <script>
-  import feather from "feather-icons";
   export default {
     data() {
       return {
@@ -37,67 +41,90 @@
         items: [
           {
             id: 1,
-            name: "Our history",
+            name: "Skills",
           },
           {
             id: 2,
-            name: "Our mission",
+            name: "Experiências",
           },
           {
             id: 3,
-            name: "Friendly support",
+            name: "Educação",
           },
         ],
+
         tabContent: [
           {
             id: 1,
-            desc: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              laudantium neque cumque, magni, modi aut a dolores deleniti
-              recusandae dolor quod aliquid aperiam. Delectus voluptate quam
-              deserunt expedita temporibus ab! `,
-            content: [{}],
+            content: [
+              {
+                title: "User Interface Development",
+                name: "✓",
+              },
+              {
+                title: "Reactive Programming",
+                name: "✓",
+              },
+              {
+                title: "CMS Development",
+                name: "✓",
+              },
+              {
+                title: "Web Performance Optimization",
+                name: "✓",
+              },
+              {
+                title: "Cross-browser/Device Testing",
+                name: "✓",
+              },
+              {
+                title: "Web Accessibility",
+                name: "✓",
+              },
+            ],
           },
           {
             id: 2,
-            desc: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              laudantium neque cumque, magni, modi aut a dolores deleniti
-              recusandae dolor quod aliquid aperiam. Delectus voluptate quam
-              deserunt expedita temporibus ab!`,
-            content: [{}],
+            content: [
+              {
+                title: "Front-end Developer",
+                name: "One Digital (Growth Agency)",
+                desc: "2019 - Atual",
+              },
+              {
+                title: "Front-end Developer",
+                name: "Cave Digital (Agência de Estratégia e Comunicação Digital)",
+                desc: "2018 - 2019",
+              },
+              {
+                title: "Front-end Developer",
+                name: "Agência Profite (Implantação de E-Commerce, SEO e Evolução)",
+                desc: "2018 - 2018",
+              },
+              {
+                title: "Front-end Developer",
+                name: "L4U (Aceleradora de Marketing e Negócios Digitais)",
+                desc: "2016 - 2017",
+              },
+            ],
           },
           {
             id: 3,
-            desc: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              laudantium neque cumque, magni, modi aut a dolores deleniti
-              recusandae dolor quod aliquid aperiam. Delectus voluptate quam
-              deserunt expedita temporibus ab!`,
-            content: [{}],
-          },
-        ],
-        listOne: [
-          {
-            icon: "check",
-            desc: `The Philosophy Of business analytics`,
-          },
-          {
-            icon: "check",
-            desc: ` Fast-Track Your business`,
-          },
-          {
-            icon: "check",
-            desc: `Lies And Damn Lies About business`,
-          },
-          {
-            icon: "check",
-            desc: `The Ultimate Deal On business`,
+            content: [
+              {
+                title: "Análise e Desenvolvimento de Sistemas",
+                name: "Faculdade Impacta de Tecnologia",
+                desc: "2019 - 2020",
+              },
+              {
+                title: "Ciência da Computação",
+                name: "Universidade São Judas Tadeu",
+                desc: "2015 - 2018 (Bacharelado trancado em 2017)",
+              },
+            ],
           },
         ],
       };
-    },
-    methods: {
-      iconSvg(icon) {
-        return feather.icons[icon].toSvg();
-      },
     },
   };
 </script>

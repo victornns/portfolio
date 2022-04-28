@@ -60,8 +60,7 @@
               <v-col lg="12">
                 <div class="copyright-text">
                   <p>
-                    Copyright © {{ new Date().getFullYear() }} Rainbow-Themes.
-                    All Rights Reserved.
+                    Copyright © {{ new Date().getFullYear() }} All Rights Reserved.
                   </p>
                 </div>
               </v-col>

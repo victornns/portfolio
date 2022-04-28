@@ -1,9 +1,7 @@
 <template>
   <div>
     <!-- Start Header Area -->
-    <HeaderOnePageTwo>
-      <img slot="logo" src="../../assets/images/logo/logo.png" />
-    </HeaderOnePageTwo>
+    <Header />
     <!-- End Header Area -->
 
     <!-- Start Breadcrump Area  -->
@@ -36,7 +34,7 @@
           <v-col>
             <div class="portfolio-details">
               <div class="inner mb--50">
-                <h2>Trydo</h2>
+                <h2>Hello</h2>
                 <p class="subtitle">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
@@ -65,7 +63,7 @@
                 </div>
               </div>
               <div class="portfolio-thumb-inner">
-                <!-- <div class="thumb position-relative mb--30">
+                <div class="thumb position-relative mb--30" v-if="items.length">
                   <CoolLightBox
                     :items="items"
                     :index="index"
@@ -87,7 +85,7 @@
                       ></a>
                     </div>
                   </div>
-                </div> -->
+                </div>
                 <div 
                   class="thumb gradient mb--50"
                   v-for="(image, imageIndex) in images" 
@@ -147,37 +145,43 @@
     </div>
     <!-- End Related Work  -->
 
+    <!-- Start Footer Area  -->
+    <Footer />
+    <!-- End Footer Area  -->
+
   </div>
 </template>
 
 <script>
-  import HeaderOnePageTwo from "../../components/header/HeaderOnePageTwo";
+  import Header from "../../components/header/Header";
+  import Footer from "../../components/footer/Footer";
 
   export default {
     components: {
-      HeaderOnePageTwo,
+      Header,
+      Footer,
     },
     data() {
       return {
         items: [
-          {
-            thumb: require("../../assets/images/portfolio/portfolio-big-03.jpg"),
-            src: "https://www.youtube.com/watch?v=ZOoVOfieAF8",
-          },
+          // {
+          //   thumb: require("../../assets/images/projects/constelacao-dvl/about-page-desktop-1230px.jpg"),
+          //   src: "https://www.youtube.com/watch?v=ZOoVOfieAF8",
+          // },
         ],
         images: [
           {
-            thumb: require("../../assets/images/screenshots/constelacao-dvl/about-page-desktop-1230px.jpg")
+            thumb: require("../../assets/images/projects/constelacao-dvl/about-page-desktop-1230px.jpg")
           },
         ],
         moreProjects: [
           {
-            src: require("../../assets/images/portfolio/related-image-01.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             title: "Digital Analysis",
             categorie: "Technique",
           },
           {
-            src: require("../../assets/images/portfolio/related-image-02.jpg"),
+            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
             title: "Plan Management",
             categorie: "Planning",
           },

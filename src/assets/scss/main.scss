@@ -1,7 +1,6 @@
 
 /*********************************************************************************
 
-	Template Name: Trydo Vue js Degital Agency Template
 	Note: This is style css.
 
 **********************************************************************************/
@@ -37,27 +36,14 @@
 	|
 	|___Elements Styles
 	|	|___ portfolio 
-	|	|___ service 
 	|	|___ slider 
-	|	|___ counterup 
-	|	|___ testimonial 
-	|	|___ brand 
-	|	|___ team 
-	|	|___ callto-action 
 	|	|___ tab 
 	|	|___ accordion 
 	|	|___ list 
-	|	|___ contact 
-	|
-	|___BLog Styles
-	|	|___ blog 
-	|	|___ blog-details 
 	|
 	|___Template Styles
 	|	|___ about 
 	|	|___ portfolio-details
-	|	|___ service-details
-	|	|___ preview
 	|
 	|
 	|___ END STYLESHEET INDEXING
@@ -104,34 +90,18 @@
 ***************************************/
 
 @import "elements/portfolio";
-@import "elements/service";
 @import "elements/section-title";
 @import "elements/slider";
-@import "elements/counterup";
-@import "elements/testimonial";
 @import "elements/brand";
-@import "elements/team";
-@import "elements/callto-action";
 @import "elements/tab";
 @import "elements/accordion";
 @import "elements/list";
-@import "elements/contact";
 @import "elements/video-button";
 @import "elements/social";
 @import "elements/progress";
-@import "elements/gallery";
 @import "elements/column";
-@import "elements/pricing";
 @import "elements/404";
 
-
-
-/**************************************
-    Blog Styles
-***************************************/
-
-@import "blog/blog";
-@import "blog/blog-details";
 
 
 
@@ -142,7 +112,6 @@
 @import "template/about";
 @import "template/custom-vuetify";
 @import "template/portfolio-details";
-@import "template/service-details";
 @import "template/particles";
 @import "template/dark-version";
 @import "template/preview";
