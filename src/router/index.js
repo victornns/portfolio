@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import goTo from "vuetify/es5/services/goto";
 import Missing from "../views/404.vue";
 import Home from "../views/home/Home.vue";
+import store from '../store';
 
 Vue.use(VueRouter);
 
@@ -15,18 +16,34 @@ const routes = [
     },
   },
   {
-    path: "/portfolio-details",
+    path: "/projeto/:slug",
     name: "PortfolioDetails",
     meta: {
       title: "Portfólio - Detalhes",
     },
+    props: true,
     component: () => import("../views/portfolio/PortfolioDetails.vue"),
+    beforeEnter: (to, from, next) => {
+      let slug = to.params.slug
+
+      store.dispatch('getProjectBySlug', slug).then(response => {
+        if (!response) {
+          next({ name: "Missing" })
+        }
+
+        to.params.project = response;
+
+        next();
+      })
+    }
   },
   {
-    path: "*",
+    path: "/404",
+    alias: "*",
+    name: "Missing",
     component: Missing,
     meta: {
-      title: "404",
+      title: "Página não encontrada",
     },
   },
 ];
