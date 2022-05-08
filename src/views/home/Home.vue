@@ -11,7 +11,7 @@
         :style="{'background-image': 'url(' + require('@/assets/images/wallpaper-universe.jpg') + ')'}"
       >
         <Slider>
-          <span slot="designation">WEB DEVELOPER</span>
+          <span slot="designation">FREELANCER WEB DEVELOPER</span>
           <h1 class="heading-title" slot="heading-title">
             Olá, Sou Victor<br>
             <span>JS Developer.</span><br>
@@ -48,18 +48,12 @@
           <v-row>
             <v-col lg="12">
               <div class="section-title text-center mb--20 mb_sm--0">
-                <h2 class="heading-title">All Works</h2>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available,
-                  <br />
-                  but the majority have suffered alteration.
-                </p>
+                <h2 class="heading-title">Projetos</h2>
               </div>
             </v-col>
           </v-row>
         </v-container>
-        <PortfolioFour />
+        <Portfolio />
       </div>
     </div>
     <!-- End Portfolio Area -->
@@ -74,7 +68,7 @@
   import Header from "../../components/header/Header";
   import Slider from "../../components/slider/Slider";
   import AboutFour from "../../components/about/About";
-  import PortfolioFour from "../../components/portfolio/Portfolio";
+  import Portfolio from "../../components/portfolio/Portfolio";
   import Footer from "../../components/footer/Footer";
 
   export default {
@@ -82,7 +76,7 @@
       Header,
       Slider,
       AboutFour,
-      PortfolioFour,
+      Portfolio,
       Footer,
     },
     data() {

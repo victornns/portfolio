@@ -71,6 +71,18 @@
                 font-size: 23px;
                 line-height: 44px;
                 margin-top: 28px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 200px;
+                    height: 1px;
+                    background-color: #e1e1e1;
+                    display: block;
+                    top: -15px;
+                    left: 0;
+                }
 
                 @media #{$lg-layout} {
                     font-size: 20px;
@@ -103,6 +115,9 @@
                 h4 {
                     font-size: 22px;
                     font-weight: 500;
+                }
+                .link h4 {
+                    text-decoration: underline;
                 }
             }
         }

@@ -97,7 +97,9 @@
     },
     computed: {
       portfolioContent () {
-        return this.$store.state.projects.filter(project => project.showHome)
+        return this.$store.state.projects.filter(
+          project => project.showHome
+        )
       }
     }
   };

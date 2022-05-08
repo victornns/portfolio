@@ -18,10 +18,16 @@
               <div class="single-tab-content">
                 <ul>
                   <li v-for="(item, i) in item.content" :key="i">
-                    <router-link to="/service"
-                      >{{ item.title }}
-                      <span> - {{ item.name }}</span></router-link
-                    >
+                    <div v-if="item.link">
+                      {{ item.title }}
+                      <a :href="`//${item.link}`" target="_blank" style="display: inline-block;">
+                        <span> - {{ item.name }}</span>
+                      </a>
+                    </div>
+                    <div v-else>
+                      {{ item.title }}
+                      <span> - {{ item.name }}</span>
+                    </div>
                     {{ item.desc }}
                   </li>
                 </ul>
@@ -89,21 +95,25 @@
               {
                 title: "Front-end Developer",
                 name: "One Digital (Growth Agency)",
+                link: "www.one.com.br",
                 desc: "2019 - Atual",
               },
               {
                 title: "Front-end Developer",
                 name: "Cave Digital (Agência de Estratégia e Comunicação Digital)",
+                link: "www.cavedigital.com.br",
                 desc: "2018 - 2019",
               },
               {
                 title: "Front-end Developer",
-                name: "Agência Profite (Implantação de E-Commerce, SEO e Evolução)",
+                name: "Profite (Implantação de E-Commerce, SEO e Evolução)",
+                link: "www.profite.com.br",
                 desc: "2018 - 2018",
               },
               {
                 title: "Front-end Developer",
                 name: "L4U (Aceleradora de Marketing e Negócios Digitais)",
+                link: "www.l4u.com.br",
                 desc: "2016 - 2017",
               },
             ],

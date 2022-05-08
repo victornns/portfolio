@@ -1,18 +1,18 @@
 <template>
-  <footer class="footer-area footer-default">
+  <footer class="footer-area footer-default mt--100">
     <div class="footer-wrapper">
       <v-row align="end" class="row--0">
         <v-col md="6" sm="12" cols="12">
           <div class="footer-left">
             <div class="inner">
-              <span>Ready To Do This</span>
-              <h2>
+              <!-- <span>Pronto</span> -->
+              <!-- <h2>
                 Let's get <br />
                 to work
-              </h2>
-              <router-link class="rn-button-style--2" to="/contact"
-                ><span>Contact Us</span></router-link
-              >
+              </h2> -->
+              <a class="rn-button-style--2" :href="`${contactMe[0].url}`" target="_blank">
+                Contate-me
+              </a>
             </div>
           </div>
         </v-col>
@@ -21,7 +21,7 @@
           <div class="footer-right" data-black-overlay="6">
             <v-row>
               <!-- Start Single Widget -->
-              <v-col lg="6" sm="6" cols="12">
+              <!-- <v-col lg="6" sm="6" cols="12">
                 <div class="footer-widget">
                   <h4>Quick Link</h4>
                   <ul class="ft-link">
@@ -30,12 +30,12 @@
                     </li>
                   </ul>
                 </div>
-              </v-col>
+              </v-col> -->
               <!-- End Single Widget  -->
               <!-- Start Single Widget -->
               <v-col lg="6" sm="6" cols="12" class="mt_mobile--30">
                 <div class="footer-widget">
-                  <h4>Say Hello</h4>
+                  <h4>Diga, oi</h4>
                   <ul class="ft-link">
                     <li v-for="(mail, i) in mailList" :key="i">
                       <a :href="mail.to">{{ mail.mailItem }}</a>
@@ -59,9 +59,7 @@
 
               <v-col lg="12">
                 <div class="copyright-text">
-                  <p>
-                    Copyright © {{ new Date().getFullYear() }} All Rights Reserved.
-                  </p>
+                  <p></p>
                 </div>
               </v-col>
             </v-row>
@@ -77,49 +75,35 @@
   export default {
     data() {
       return {
-        socialList: [
-          {
-            icon: "fa-facebook-f",
-            url: "https://www.facebook.com/",
-          },
-          {
-            icon: "fa-linkedin-in",
-            url: "https://www.linkedin.com/",
-          },
-          {
-            icon: "fa-twitter",
-            url: "https://twitter.com/",
-          },
-          {
-            icon: "fa-instagram",
-            url: "https://www.instagram.com/",
-          },
-        ],
+        socialList: this.$store.state.information.socialList,
         navList: [
           {
-            navItem: "Work",
-            to: "/portfolio",
+            navItem: "Home",
+            to: "/#home",
           },
           {
-            navItem: "About",
-            to: "/about",
+            navItem: "Sobre",
+            to: "/#sobre",
           },
           {
-            navItem: `Let's Talk`,
-            to: "/contact",
+            navItem: "Portfólio",
+            to: "/#portfolio",
           },
         ],
         mailList: [
           {
-            mailItem: "admin@example.com",
-            to: "mailto:admin@example.com",
-          },
-          {
-            mailItem: "hr@example.com",
-            to: "mailto:hr@example.com",
+            mailItem: "victor.nascimento.ns@gmail.com",
+            to: "mailto:victor.nascimento.ns@gmail.com",
           },
         ],
       };
     },
+    computed: {
+      contactMe () {
+        return this.$store.state.information.socialList.filter(
+          socialItem => socialItem.name === 'Whatsapp'
+        )
+      }
+    }
   };
 </script>

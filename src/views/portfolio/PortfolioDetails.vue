@@ -4,22 +4,20 @@
     <Header />
     <!-- End Header Area -->
 
-    <!-- Start Breadcrump Area  -->
+    <!-- Start Breadcrump Area (Banner image: 1920x600px)  -->
     <div
-      class="rn-page-title-area pt--120 pb--190 bg_image bg_image--4"
+      class="rn-page-title-area pt--120 pb--190 bg_image"
       data-black-overlay="5"
+      :style="{ 'background-image': `url( ${project.banner} )` }"
     >
       <v-container>
         <v-row>
           <v-col cols="12">
             <div class="rn-page-title text-center pt--100">
               <h2 class="heading-title theme-gradient">
-                Getting tickets to the big show
+                {{ project.title }}
               </h2>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text.
-              </p>
+              <p></p>
             </div>
           </v-col>
         </v-row>
@@ -28,67 +26,40 @@
     <!-- End Breadcrump Area  -->
 
     <!-- Start Portfolio Details Area  -->
-    <div class="rn-portfolio-details ptb--120 bg_color--1">
+    <div class="rn-portfolio-details ptb--60 bg_color--1">
       <v-container>
         <v-row>
           <v-col>
             <div class="portfolio-details">
               <div class="inner mb--50">
-                <h2>Hello</h2>
-                <p class="subtitle">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
+                <p class="subtitle" v-if="project.subtitle">
+                  {{ project.subtitle }}
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commod viverra
-                  maecenas accumsan lacus vel facilisis. ut labore et dolore
-                  magna aliqua.
+                <p v-if="project.info">
+                  {{ project.info }}
                 </p>
                 <div class="portfolio-view-list d-flex flex-wrap">
-                  <div class="port-view">
-                    <span>Branch</span>
-                    <h4>Ability</h4>
-                  </div>
-                  <div class="port-view">
-                    <span>Project Types</span>
-                    <h4>Website</h4>
-                  </div>
-                  <div class="port-view">
-                    <span>Program</span>
-                    <h4>View Project</h4>
+                  <div 
+                    class="port-view"
+                    v-for="(feature, featureIndex) in project.features" :key="featureIndex"
+                  >
+                    <div v-if="feature.link">
+                      <span>{{ feature.title }}</span>
+                      <a :href="`//${feature.link}`" target="_blank" class="link">
+                        <h4>{{ feature.content }}</h4>
+                      </a>
+                    </div>
+                    <div v-else>
+                      <span>{{ feature.title }}</span>
+                      <h4>{{ feature.content }}</h4>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="portfolio-thumb-inner">
-                <div class="thumb position-relative mb--30" v-if="items.length">
-                  <CoolLightBox
-                    :items="items"
-                    :index="index"
-                    @close="index = null"
-                  >
-                  </CoolLightBox>
-
-                  <div class="thumbnail position-relative">
-                    <div v-for="(image, imageIndex) in items" :key="imageIndex">
-                      <img
-                        class="w-100"
-                        :src="image.thumb"
-                        alt="About Images"
-                      />
-                      <a
-                        @click="index = imageIndex"
-                        class="video-popup position-top-center theme-color play__btn"
-                        ><span class="play-icon"></span
-                      ></a>
-                    </div>
-                  </div>
-                </div>
                 <div 
                   class="thumb gradient mb--50"
-                  v-for="(image, imageIndex) in images" 
+                  v-for="(image, imageIndex) in project.images" 
                   :key="imageIndex">
                     <img
                       :src="image.thumb"
@@ -148,7 +119,6 @@
     <!-- Start Footer Area  -->
     <Footer />
     <!-- End Footer Area  -->
-
   </div>
 </template>
 
@@ -163,31 +133,25 @@
     },
     data() {
       return {
-        items: [
-          // {
-          //   thumb: require("../../assets/images/projects/constelacao-dvl/about-page-desktop-1230px.jpg"),
-          //   src: "https://www.youtube.com/watch?v=ZOoVOfieAF8",
-          // },
-        ],
-        images: [
-          {
-            thumb: require("../../assets/images/projects/constelacao-dvl/about-page-desktop-1230px.jpg")
-          },
-        ],
         moreProjects: [
-          {
-            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
-            title: "Digital Analysis",
-            categorie: "Technique",
-          },
-          {
-            src: require("../../assets/images/projects/constelacao-dvl/thumb-390x532.jpg"),
-            title: "Plan Management",
-            categorie: "Planning",
-          },
+          // {
+          //   src: require("../../assets/projects/images/constelacao-dvl/thumb-390x532.jpg"),
+          //   title: "Digital Analysis",
+          //   categorie: "Technique",
+          // },
+          // {
+          //   src: require("../../assets/projects/images/constelacao-dvl/thumb-390x532.jpg"),
+          //   title: "Plan Management",
+          //   categorie: "Planning",
+          // },
         ],
         index: null,
       };
+    },
+    computed: {
+      project() {
+        return this.$route.params.project
+      }
     }
   };
 </script>

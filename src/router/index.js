@@ -19,7 +19,7 @@ const routes = [
     path: "/projeto/:slug",
     name: "PortfolioDetails",
     meta: {
-      title: "Portfólio - Detalhes",
+      title: "Projeto Detalhes",
     },
     props: true,
     component: () => import("../views/portfolio/PortfolioDetails.vue"),
@@ -32,6 +32,7 @@ const routes = [
         }
 
         to.params.project = response;
+        document.title = `Projeto - ${response.title}`;
 
         next();
       })

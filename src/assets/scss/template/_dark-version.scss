@@ -47,9 +47,12 @@
     background: #191919;
   }
 
-  .bg_color--5,
-  .footer-right {
+  .bg_color--5 {
     background: #101010;
+  }
+
+  .footer-right {
+    background: #66676d;
   }
 
   .header-area.header--sticky.sticky {
@@ -159,7 +162,6 @@
 
   .bg_image--25 {
     background-color: #101010;
-    // background-image: url(../images/dimensions/1920x700.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
