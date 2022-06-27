@@ -124,7 +124,7 @@
               {
                 title: "Análise e Desenvolvimento de Sistemas",
                 name: "Faculdade Impacta de Tecnologia",
-                desc: "2019 - 2020",
+                desc: "2019 - 2020 (Tecnólogo completo)",
               },
               {
                 title: "Ciência da Computação",

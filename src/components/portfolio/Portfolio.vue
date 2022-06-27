@@ -13,7 +13,9 @@
         </div>
         <div class="content">
           <div class="inner">
-            <p>{{ item.meta }}</p>
+            <div v-for="(item, i) in item.features" :key="i">
+              <p v-if="item.title === 'Tipo'">{{ item.content }}</p>
+            </div>
             <h4>
               <router-link :to="`/projeto/${item.slug}`">{{ item.title }}</router-link>
             </h4>
@@ -47,6 +49,7 @@
           slidesToShow: 5,
           slidesToScroll: 1,
           initialSlide: 0,
+          centerMode: true,
 
           responsive: [
             {

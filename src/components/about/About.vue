@@ -9,7 +9,7 @@
       <div class="about-inner inner pt--40 pt_sm--40 pt_md--40">
         <div class="section-title">
           <h2 class="heading-title">Sobre Mim</h2>
-          <p class="description">Formado em Análise e Desenvolvimento de Sistemas e motivado por novos conhecimentos. Trabalho como desenvolvedor web há alguns anos e constantemente envolvo-me em novos projetos. Especializado em desenvolvimento front-end, sou de SP e atualmente trabalho remoto.</p>
+          <p class="description">Formado em Análise e Desenvolvimento de Sistemas, trabalho como desenvolvedor web há alguns anos e constantemente envolvo-me em novos projetos. Especializado em desenvolvimento front-end, sou de SP e atualmente trabalho remoto.</p>
         </div>
         <!-- End .section-title -->
         <div class="tab-wrapper mt--30">

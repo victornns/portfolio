@@ -1,8 +1,6 @@
 <template>
   <div>
-    <!-- Start Header Area -->
     <Header />
-    <!-- End Header Area -->
 
     <!-- Start Breadcrump Area (Banner image: 1920x600px)  -->
     <div
@@ -31,31 +29,51 @@
         <v-row>
           <v-col>
             <div class="portfolio-details">
-              <div class="inner mb--50">
-                <p class="subtitle" v-if="project.subtitle">
-                  {{ project.subtitle }}
-                </p>
-                <p v-if="project.info">
-                  {{ project.info }}
-                </p>
-                <div class="portfolio-view-list d-flex flex-wrap">
-                  <div 
-                    class="port-view"
-                    v-for="(feature, featureIndex) in project.features" :key="featureIndex"
-                  >
-                    <div v-if="feature.link">
-                      <span>{{ feature.title }}</span>
-                      <a :href="`//${feature.link}`" target="_blank" class="link">
+              <div class="d-flex flex-wrap justify-center">
+                <div class="inner mb--50">
+                  <p class="subtitle" v-if="project.subtitle">
+                    {{ project.subtitle }}
+                  </p>
+                  <p v-if="project.info">
+                    {{ project.info }}
+                  </p>
+                  <div class="portfolio-view-list d-flex flex-wrap">
+                    <div 
+                      class="port-view"
+                      v-for="(feature, featureIndex) in project.features" :key="featureIndex"
+                    >
+                      <div v-if="feature.link">
+                        <span>{{ feature.title }}</span>
+                        <a :href="`//${feature.link}`" target="_blank" class="link">
+                          <h4>{{ feature.content }}</h4>
+                        </a>
+                      </div>
+                      <div v-else>
+                        <span>{{ feature.title }}</span>
                         <h4>{{ feature.content }}</h4>
+                      </div>
+                    </div>
+                    <div
+                      class="port-view" 
+                      v-if="project.link"
+                    >
+                      <span>Visitar Projeto</span>
+                      <a :href="`//${project.link}`" target="_blank" class="link">
+                        <h4>Acessar</h4>
                       </a>
                     </div>
-                    <div v-else>
-                      <span>{{ feature.title }}</span>
-                      <h4>{{ feature.content }}</h4>
+                  </div>
+                  <div class="portfolio-view-tags d-flex flex-wrap">
+                    <div 
+                      class="port-view"
+                      v-for="(tag, tagIndex) in project.tags" :key="tagIndex"
+                    >
+                      <span>{{ tag }}</span>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="portfolio-thumb-inner">
                 <div 
                   class="thumb gradient mb--50"
@@ -75,20 +93,22 @@
     <!-- End Portfolio Details Area  -->
 
     <!-- Start Related Work  -->
-    <div class="portfolio-related-work pb--120 bg_color--1">
+    <div 
+      class="portfolio-related-work pb--120 bg_color--1"
+      v-if="moreProjects.length"
+    >
       <v-container>
         <v-row>
           <v-col>
             <div class="section-title text-center">
-              <span class="theme-color font--18 fontWeight600"
-                >Related Work</span
-              >
+              <span class="theme-color font--18 fontWeight600">
+                Related Work
+              </span>
               <h2>Our More Projects</h2>
             </div>
           </v-col>
         </v-row>
         <v-row class="mt--10">
-          <!-- Start Single Work  -->
           <v-col
             lg="6"
             md="6"
@@ -110,15 +130,12 @@
               </div>
             </div>
           </v-col>
-          <!-- End Single Work  -->
         </v-row>
       </v-container>
     </div>
     <!-- End Related Work  -->
 
-    <!-- Start Footer Area  -->
     <Footer />
-    <!-- End Footer Area  -->
   </div>
 </template>
 

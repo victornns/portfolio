@@ -32,16 +32,108 @@ const store = new Vuex.Store({
         projects: [
             
             {
+                slug: 'm2bpro', // id
+                active: true,
+                showHome: true,
+                thumb: '/projects/images/m2bpro/thumb.jpg',
+                banner: '/projects/images/m2bpro/banner.jpg',
+                title: 'M2B PRO',
+                tags: ['Node.js', 'ES6', 'React.js', 'Tailwind', 'AWS', 'Strapi CMS', 'Sass', 'BemCSS', 'GIT'],
+                link: 'www.m2bpro.com.br',
+                features: [
+                    {
+                        title: 'Contratante',
+                        content: 'LD&B Agency',
+                        link: 'www.linkedin.com/company/ldbagency'
+                    },
+                    {
+                        title: 'Tipo',
+                        content: 'CMS'
+                    },
+                    {
+                        title: 'Data',
+                        content: 'Ago/2021'
+                    },
+                ],
+                images: [
+                    { thumb: '/projects/images/m2bpro/page.png' },
+                ],
+                moreProjects: [
+                    { slug: '' }, { slug: '' }
+                ]
+            },
+
+            {
+                slug: 'kt', // id
+                active: true,
+                showHome: true,
+                thumb: '/projects/images/kt/thumb.jpg',
+                banner: '/projects/images/kt/banner.jpg',
+                title: 'KT Retailing',
+                tags: ['Node.js', 'ES6', 'Vue.js', 'Tailwind', 'AWS', 'Strapi CMS', 'Sass', 'BemCSS', 'GIT'],
+                link: 'www.kt.arq.br',
+                features: [
+                    {
+                        title: 'Contratante',
+                        content: 'LD&B Agency',
+                        link: 'www.linkedin.com/company/ldbagency'
+                    },
+                    {
+                        title: 'Tipo',
+                        content: 'CMS'
+                    },
+                    {
+                        title: 'Data',
+                        content: 'Jun/2021'
+                    },
+                ],
+                images: [
+                    { thumb: '/projects/images/kt/page.png' },
+                ],
+                moreProjects: [
+                    { slug: '' }, { slug: '' }
+                ]
+            },
+
+            {
+                slug: 'goodspine', // id
+                active: true,
+                showHome: true,
+                thumb: '/projects/images/goodspine/thumb.jpg',
+                banner: '/projects/images/goodspine/banner.jpg',
+                title: 'Good Spine',
+                tags: ['Node.js', 'ES6', 'Vue.js', 'Tailwind', 'Sass', 'BemCSS', 'GIT'],
+                link: 'travesseiro.goodspine.com.br',
+                features: [
+                    {
+                        title: 'Contratante',
+                        content: 'Good Spine',
+                    },
+                    {
+                        title: 'Tipo',
+                        content: 'Landing Page'
+                    },
+                    {
+                        title: 'Data',
+                        content: 'Abr/2021'
+                    },
+                ],
+                images: [
+                    { thumb: '/projects/images/goodspine/page.png' },
+                ],
+                moreProjects: [
+                    { slug: '' }, { slug: '' }
+                ]
+            },
+            
+            {
                 slug: 'loopa', // id
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/loopa/thumb.jpg',
-                meta: 'Website',
                 banner: '/projects/images/loopa/banner.jpg',
                 title: 'Loopa',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Wordpress', 'Theme', 'Understrap', 'Javascript', 'Sass', 'BemCSS', 'GIT'],
                 link: 'www.loopa.digital',
                 features: [
                     {
@@ -52,10 +144,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'CMS'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Financeiro'
                     },
                     {
                         title: 'Data',
@@ -75,12 +163,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/galeria-rock/thumb.jpg',
-                meta: 'CMS',
                 banner: '/projects/images/galeria-rock/banner.jpg',
                 title: 'Galeria do Rock',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Wordpress', 'Theme', 'Understrap', 'Javascript', 'Sass', 'BemCSS', 'GIT'],
                 link: 'www.galeriadorock.com.br',
                 features: [
                     {
@@ -91,10 +176,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'CMS'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Entretenimento'
                     },
                     {
                         title: 'Data',
@@ -115,12 +196,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/juliao-coelho/thumb.jpg',
-                meta: 'Blog',
                 banner: '/projects/images/juliao-coelho/banner.jpg',
                 title: 'Julião Coelho',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Wordpress', 'Theme', 'Understrap', 'Javascript', 'Sass', 'BemCSS', 'GIT'],
                 link: 'www.juliaocoelho.com.br',
                 features: [
                     {
@@ -131,10 +209,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'Blog'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Advocacia'
                     },
                     {
                         title: 'Data',
@@ -154,12 +228,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/covabra-supermercados/thumb.jpg',
-                meta: 'Landing Page',
                 banner: '/projects/images/covabra-supermercados/banner.jpg',
                 title: 'Covabra Supermercados',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Node.js', 'Javascript', 'BemCSS', 'Gulp', 'Git'],
                 link: '',
                 features: [
                     {
@@ -170,10 +241,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'Landing Page'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Campanha'
                     },
                     {
                         title: 'Data',
@@ -193,12 +260,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/unic/thumb.jpg',
-                meta: 'Landing Page',
                 banner: '/projects/images/unic/banner.jpg',
                 title: 'UNIC',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Node.js', 'Javascript', 'BemCSS', 'Gulp', 'Git'],
                 link: 'www.unic-corporativos.com.br',
                 features: [
                     {
@@ -209,10 +273,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'Landing Page'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Corporativo'
                     },
                     {
                         title: 'Data',
@@ -232,12 +292,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/metlycs/thumb.jpg',
-                meta: 'Landing Page',
                 banner: '/projects/images/metlycs/banner.jpg',
                 title: 'Metlycs',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Node.js', 'Vue.js', 'Pug.js', 'CSS animations', 'BemCSS', 'Webpack', 'Git'],
                 link: 'www.metlycs.com.br',
                 features: [
                     {
@@ -248,10 +305,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'Landing Page'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Marketing'
                     },
                     {
                         title: 'Data',
@@ -271,12 +324,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/constelacao-dvl/thumb.jpg',
-                meta: 'Website',
                 banner: '/projects/images/constelacao-dvl/banner.jpg',
                 title: 'Constelação DVL',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Theme', 'Javascript', 'Node', 'Heroku', 'Sass', 'BemCSS', 'Git'],
                 link: 'www.constelacaodvl.com.br',
                 features: [
                     {
@@ -287,10 +337,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'Website'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Psicologia'
                     },
                     {
                         title: 'Data',
@@ -310,12 +356,9 @@ const store = new Vuex.Store({
                 active: true,
                 showHome: true,
                 thumb: '/projects/images/franquia-dia/thumb.jpg',
-                meta: 'CMS',
                 banner: '/projects/images/franquia-dia/banner.jpg',
                 title: 'Franquia DIA',
-                subtitle: 'Informações Técnicas',
-                info: '',
-                tags: ['Lorem', 'Ipsum', 'Dolor'],
+                tags: ['Wordpress', 'Theme', 'Javascript', 'Sass', 'BemCSS', 'GIT'],
                 link: 'www.franquiadia.com.br',
                 features: [
                     {
@@ -326,10 +369,6 @@ const store = new Vuex.Store({
                     {
                         title: 'Tipo',
                         content: 'CMS'
-                    },
-                    {
-                        title: 'Área',
-                        content: 'Franqueadora'
                     },
                     {
                         title: 'Data',
